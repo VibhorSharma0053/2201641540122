@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.2",
-    "logging-middleware": "file:../Logging Middleware",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router-dom": "^7.8.2"
+    "logging-middleware": "file:../Logging Middleware", 
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.0", 
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

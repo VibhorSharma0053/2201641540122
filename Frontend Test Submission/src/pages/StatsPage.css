@@ -1,0 +1,122 @@
+.stats-container {
+  max-width: 1200px;
+}
+
+.stats-container h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.no-links-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.stats-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; 
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.stats-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.stats-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.stats-table td a {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+}
+.stats-table td a:hover {
+  text-decoration: underline;
+}
+
+.original-url-cell {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: help; 
+}
+.original-url-cell:hover {
+  overflow: visible;
+  white-space: normal;
+  word-break: break-all;
+}
+@media (max-width: 800px) {
+  .stats-table {
+     min-width: auto; 
+  }
+
+  .stats-table thead {
+    display: none;
+  }
+
+  .stats-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background: #fff;
+  }
+
+  .stats-table td {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.75rem 1rem;
+    text-align: right; 
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .stats-table td:last-child {
+    border-bottom: none;
+  }
+
+  .stats-table td::before {
+    content: attr(data-label); 
+    font-weight: bold;
+    text-align: left;
+    color: #34495e;
+    margin-right: 1rem; 
+  }
+
+  .original-url-cell {
+    max-width: 100%;
+    white-space: normal;
+    text-overflow: unset;
+    overflow: visible;
+    word-break: break-all; 
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .original-url-cell::before {
+     margin-bottom: 0.5rem; 
+  }
+}
